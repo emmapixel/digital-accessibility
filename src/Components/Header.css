@@ -1,0 +1,233 @@
+/* --> Mobile First <-- */
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContainer {
+    display: none;
+}
+
+.logoContainer {
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    height: 50%;
+    overflow: hidden;
+}
+
+.mobileMenuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: #e1ebf7;
+}
+
+.hamburgerMenuContainer {
+    margin-left: 20px;
+}
+
+.hamburgerMenu {
+    color: #0D3A5B;
+    font-size: 40px;
+}
+
+.inputWrapper {
+    margin-left: 80px;
+}
+
+.inputIcon {
+    height: 16px;
+    width: 16px;
+    padding: 4px;
+    position: absolute;
+    top:50%;
+    left:10px;
+    transform: translateY(-50%);
+    color: #0D3A5B;
+  }
+
+.inputField {
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    outline: none;
+    margin: 20px 0px 20px 0px;
+    box-sizing:border-box;
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+.inputField:focus {
+    border: 2px solid #221DFA;
+}
+
+.mobileUserAndBasketContainer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e1ebf7;
+    padding-right: 20px;
+}
+
+::placeholder { 
+    color: #0D3A5B;
+    opacity: 1; 
+    font: 16px/3 verdana;
+  }
+
+.navbar {
+    display: none;
+}
+
+.userAndBasketContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.menuIcon {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.iconText {
+    font-size: 16px;
+}
+
+/* --> Media Query <-- */
+
+@media screen and (min-width: 768px) {
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: #e1ebf7;
+}
+
+.logoContainer {
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    height: 50%;
+    overflow: hidden;
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.inputIcon {
+    height: 22px;
+    width: 22px;
+    padding: 4px;
+    position: absolute;
+    top:50%;
+    left:10px;
+    transform: translateY(-50%);
+    color: #0D3A5B;
+  }
+
+.inputField {
+    height: 50px;
+    width: 400px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    outline: none;
+    margin: 20px 50px 20px 0px;
+    box-sizing:border-box;
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+.inputField:focus {
+    border: 2px solid #221DFA;
+}
+
+::placeholder { 
+    color: #0D3A5B;
+    opacity: 1; 
+    font: 20px/3 verdana;
+  }
+  
+.mobileMenuContainer {
+    display: none;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.mobileUserAndBasketContainer {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 40px 0px 20px 0px;
+}
+
+.navLink {
+    margin: 0px 20px 0px 20px;
+    border: 3px solid white;
+    color: #0D3A5B;
+    font-weight: 550; 
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #221DFA;
+    text-decoration: underline;
+}
+
+.navLink:focus {
+    background-color: #FFFF00;
+    color: #221DFA;
+    border: 3px solid #221DFA;
+    text-decoration: underline;
+}
+
+.navLink:active {
+    background-color: #FFFF00;
+    color: #0D3A5B;
+    border: 3px solid #221DFA;
+}
+
+.userAndBasketContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    position: absolute;
+    right: 80px;
+}
+
+.menuIcon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.iconText {
+    font-size: 16px;
+}
+
+}

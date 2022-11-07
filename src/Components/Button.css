@@ -1,0 +1,67 @@
+/* --> Mobile First <-- */
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #0D3A5B;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 6px 12px;
+    border: 2px solid white;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #221DFA;
+    text-decoration: underline;
+}
+
+.button:active {
+    background-color: #1a547d;
+    border: 2px solid orange;
+    text-decoration: underline;
+    color: #0D3A5B;
+}
+
+.button:focus {
+    border: 2px solid #0D3A5B;
+    color: #221DFA;
+    background-color: #FFFF00;
+    text-decoration: underline;
+}
+
+/* --> Media Query <-- */
+
+@media screen and (min-width: 768px) {
+    .button {
+        display: flex;
+        align-items: center;
+        background-color: #0D3A5B;
+        color: #FFFFFF;
+        border-radius: 50px;
+        padding: 6px 12px;
+        border: 2px solid white;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .button:hover {
+        background-color: #221DFA;
+        text-decoration: underline;
+    }
+    
+    .button:active {
+        background-color: #1a547d;
+        border: 2px solid orange;
+        text-decoration: underline;
+        color: #0D3A5B;
+    }
+    
+    .button:focus {
+        border: 2px solid #0D3A5B;
+        color: #221DFA;
+        background-color: #FFFF00;
+        text-decoration: underline;
+    }
+}

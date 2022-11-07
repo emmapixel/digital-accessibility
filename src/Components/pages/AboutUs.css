@@ -1,0 +1,29 @@
+/* --> Mobile First <-- */
+
+.abiutUsPageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --> Media Query <-- */
+
+@media screen and (min-width: 768px) {
+    .aboutUsPageContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactVideo {
+        outline: none;
+    }
+
+    .contactVideo:focus {
+        border: 4px solid #221DFA;
+    }
+}

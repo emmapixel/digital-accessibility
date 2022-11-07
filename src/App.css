@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/* --> Mobile First <-- */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Arial, Times New Roman, Calibri;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-weight: 100;
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h2 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 18;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 17;
+  font-weight: 100;
+}
+
+.buttonText {
+  margin-left: 10px;
+  font-family: Verdana, Arial, Times New Roman, tahoma, calibri;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.iconButton {
+  border: 2px solid transparent;
+  outline: none;
+  background: none;
+  color: #0D3A5B;
+}
+
+.iconButton:hover {
+  color: #221DFA;
+}
+
+.iconButton:active {
+  border: 2px solid #221DFA;
+}
+
+.iconButton:focus {
+  border: 2px solid #221DFA;
+}
+
+.breadcrumbs {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #0D3A5B;
+}
+
+/* --> Media Query <-- */
+
+@media screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Arial, Times New Roman, Calibri;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  h1 {
+    font-weight: 100;
+    font-size: 32px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  h2 {
+    font-weight: 100;
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 18;
+    font-weight: 100;
+  }
+  
+  h4 {
+    font-size: 17;
+    font-weight: 100;
+  }
+  
+  .buttonText {
+    margin-left: 10px;
+    font-family: Verdana, Arial, Times New Roman, tahoma, calibri;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .iconButton {
+    border: 2px solid transparent;
+    outline: none;
+    background: none;
+    color: #0D3A5B;
+  }
+  
+  .iconButton:hover {
+    color: #221DFA;
+  }
+  
+  .iconButton:active {
+    border: 2px solid #221DFA;
+    background-color: #FFFF00;
+  }
+  
+  .iconButton:focus {
+    border: 2px solid #221DFA;
+    background-color: #FFFF00   ;
+  }
+
+  .breadcrumbs {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #0D3A5B;
   }
 }
