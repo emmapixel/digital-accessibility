@@ -37,6 +37,18 @@
     font-size: 40px;
 }
 
+.mobileNavbarContainer {
+    background-color: white;
+    margin-top: 15px;
+    height: 100vh;
+    width: 70vw;
+    padding: 20px 0px 0px 20px;
+    position: absolute;
+    top: 20;
+    right: 0;
+    z-index: 151;
+}
+
 .inputWrapper {
     margin-left: 80px;
 }
@@ -100,6 +112,40 @@
 
 .iconText {
     font-size: 16px;
+}
+
+.mobileNavbarList {
+    list-style-type:none;
+}
+
+.linkMarginBottom {
+    margin-bottom: 30px;
+}
+
+.navLink {
+    margin: 0px 20px 0px 5px;
+    border: 3px solid white;
+    color: #0D3A5B;
+    font-weight: 550; 
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #221DFA;
+    text-decoration: underline;
+}
+
+.navLink:focus {
+    background-color: #FFFF00;
+    color: #221DFA;
+    border: 3px solid #221DFA;
+    text-decoration: underline;
+}
+
+.navLink:active {
+    background-color: #FFFF00;
+    color: #0D3A5B;
+    border: 3px solid #221DFA;
 }
 
 /* --> Media Query <-- */

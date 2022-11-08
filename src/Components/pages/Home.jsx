@@ -24,10 +24,12 @@ export default function Home() {
                                 <h2>Erbjudandet gäller 31/11-2022, för dig som är(eller blir)medlem</h2>
                             <br />                    
                         </article>
-                        <Button>
-                            <h1 className="buttonText">Till erbjudandet</h1>
-                            <FontAwesomeIcon className="arrowRightIcon" icon={faArrowRightLong} />
-                        </Button>
+                        <a href="./shop">  
+                            <Button>
+                                <h1 className="buttonText">Till erbjudandet</h1>
+                                <FontAwesomeIcon className="arrowRightIcon" icon={faArrowRightLong} />
+                            </Button>
+                        </a>  
                     </article>
                     <article className="discountSection">
                         <article className="discountImageContainer">
@@ -36,12 +38,14 @@ export default function Home() {
                         <article className="discountDescriptionContainer">
                                 <h1 className="titleBold">Lys upp höstmörket. <br />Nu <span className="redText">30%</span> på alla lampor.</h1>
                                 <br />
-                                <h2>Erbjudandet gäller 31/11-2022, för dig som är(eller blir)medlem</h2>
-                            <br />                    
-                            <Button>
-                                <h1 className="buttonText">Till erbjudandet</h1>
-                                <FontAwesomeIcon className="arrowRightIcon" icon={faArrowRightLong} />
-                            </Button>
+                                <h2>Erbjudandet gäller 31/11-2022, för dig som är (eller blir) medlem.</h2>
+                            <br />
+                            <a href="./shop">                  
+                                <Button>
+                                    <h1 className="buttonText">Till erbjudandet</h1>
+                                    <FontAwesomeIcon className="arrowRightIcon" icon={faArrowRightLong} />
+                                </Button>
+                            </a>  
                         </article>
                     </article>
                     <article className="aboutMobileSection">
@@ -51,9 +55,9 @@ export default function Home() {
                         <section className="aboutSectionImageDescription"> 
                                 <h1 className="titleBold">Träffa Hemma Bäst teamet!</h1>
                                 <br/>
-                                <h2>För att du ska ha möjlighet att skapa den bästa miljön i ditt hem följer vi dessa fem principer</h2>
+                                <h2>För att du ska ha möjlighet att skapa den bästa miljön i ditt hem följer vi dessa fem principer.</h2>
                                     <br/>
-                                    <ul className="principList">
+                                    <ul>
                                         <li>Tillit</li>
                                         <li>Trygghet</li>
                                         <li>Sparande</li>
@@ -61,18 +65,20 @@ export default function Home() {
                                         <li>Nytänkande</li>
                                     </ul>
                         </section>
-                        <Button>
-                            <h1 className="buttonText">Kom i kontakt med oss</h1>
-                            <FontAwesomeIcon className="arrowRightIcon" icon={faArrowRightLong} />
-                        </Button>
+                        <a href="./aboutus">
+                            <Button>
+                                <h1 className="buttonText">Kom i kontakt med oss</h1>
+                                <FontAwesomeIcon className="arrowRightIcon" icon={faArrowRightLong} />
+                            </Button>
+                        </a>
                     </article>
                     <article className="aboutSection">
                         <section className="aboutSectionImage">
-                            <img src="./media/images/team.jpg" alt="Bild på fem människor som jobbar på Hemma Bäst företaget. Tre killar och två tjejer. Alla ler och är glada. "width="100%"></img>
+                            <img src="./media/images/team.jpg" alt="Bild på fem människor som jobbar på Hemma Bäst företaget. Tre killar och två tjejer. Alla ler och är glada. "width="100%" height="100%"></img>
                         </section>
                         <section className="aboutSectionImageDescription"> 
                             <h1 className="titleBold">Träffa Hemma Bäst teamet!</h1>
-                            <h2>För att du ska ha möjlighet att skapa den bästa miljön i ditt hem följer vi dessa fem principer</h2>
+                            <h2 className="descriptionTitel">För att du ska ha möjlighet att skapa den bästa miljön i ditt hem följer vi dessa fem principer</h2>
                                 <ul>
                                     <li>Tillit</li>
                                     <li>Trygghet</li>
@@ -81,10 +87,12 @@ export default function Home() {
                                     <li>Nytänkande</li>
                                 </ul>
                             <br/>
-                            <Button>
-                                <h1 className="buttonText">Kom i kontakt med oss</h1>
-                                <FontAwesomeIcon className="arrowRightIcon" icon={faArrowRightLong} />
-                            </Button>
+                                <a href="./aboutus">
+                                    <Button>
+                                        <h1 className="buttonText">Kom i kontakt med oss</h1>
+                                        <FontAwesomeIcon className="arrowRightIcon" icon={faArrowRightLong} />
+                                    </Button>
+                                </a>
                         </section>
                     </article>
                 </section>

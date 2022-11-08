@@ -1,6 +1,7 @@
 import "./Footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import Button from "./Button";
 
 export default function Footer() {
@@ -11,6 +12,7 @@ export default function Footer() {
                 <input className="inputField" placeholder="dinmail@hotmail.com" required></input>
                 <Button>
                     <h1 className="buttonText">Godkänn prenumeration</h1>
+                    <FontAwesomeIcon className="check" icon={faCheck} />
                 </Button>
             </section>
 

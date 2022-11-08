@@ -5,8 +5,17 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
+
+
 
 export default function Header() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const onMobileMenuClicked = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    }
+
     return (
         <main className="header">
             <section className="mobileMenuContainer">
@@ -18,7 +27,26 @@ export default function Header() {
                     <input className="inputField" type="search" role="combobox" maxLength="150" placeholder="Vad letar du efter?" />
                 </div>
                 <div className='hamburgerMenuContainer'>
-                    <FontAwesomeIcon className="hamburgerMenu" icon={faBars} />
+                    <section className="mobileMenuOpen" onClick={onMobileMenuClicked}>
+                        <FontAwesomeIcon className="hamburgerMenu" icon={faBars} />
+                    </section>
+                    {
+                        mobileMenuOpen && (
+                         <section className='mobileNavbarContainer'>
+                            <ul className='mobileNavbarList'>
+                                <li className="linkMarginBottom">
+                                    <Link className="navLink" title="home" to="/">HEM</Link>
+                                </li>
+                                <li className="linkMarginBottom">
+                                    <Link className="navLink" to="/shop">BUTIK</Link>
+                                </li>
+                                <li>
+                                    <Link className="navLink" to="/aboutus">OM OSS</Link>
+                                </li>
+                            </ul>
+                        </section>
+                        )
+                    }
                 </div>
             </section>
             <section className="mobileUserAndBasketContainer">
@@ -53,7 +81,7 @@ export default function Header() {
             <nav className="navbar">
                 <Link className="navLink" title="home" to="/">HEM</Link>
                 <Link className="navLink" to="/shop">BUTIK</Link>
-                <Link className="navLink" to="/aboutUs">OM OSS</Link>
+                <Link className="navLink" to="/aboutus">OM OSS</Link>
             </nav>
         </main>
     )
